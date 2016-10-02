@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Vacation Survival Kit</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+
+    <!--Key phrases-->
+
+
+    <string name="where_is_terminal">Excuse me, where is the terminal ___?</string>
+    <string name="where_is_baggage_claim">Excuse me, where is the baggage claim?</string>
+    <string name="how_much_cup_of_coffee">How much does a cup of coffee cost?</string>
+    <string name="where_is_restroom">Excuse me, where is the restroom?</string>
+    <string name="where_is_good_restaurant">Where is a good restaurant around here?</string>
+    <string name="where_is_place">Excuse me, where is ___?</string>
+    <string name="where_is_US_embassy">Excuse me, where is the US Embassy?</string>
+    <string name="closest_hotel">Where is the closest hotel to me?</string>
+
+    <!--End Key phrases-->
+    <string name="sms_info">Choose contacts to send a text message to.\nClick any name to remove from list.</string>
+    <string name="choose_dest">Where are you traveling to?</string>
+
+</resources>

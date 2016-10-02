@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Vacation Survival Kit</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+
+
+    <!--Key phrases-->
+
+
+    <string name="where_is_terminal">Excusez-moi, où est la borne ___?</string>
+    <string name="where_is_baggage_claim">Excusez-moi, où est la salle des bagages?</string>
+    <string name="how_much_cup_of_coffee">Combien coûte une tasse de café?</string>
+    <string name="where_is_restroom">Excusez-moi, où sont le toilette?</string>
+    <string name="where_is_good_restaurant">Où est un bon restaurant dans les environs?</string>
+    <string name="where_is_place">Excusez-moi, où est ___?</string>
+    <string name="where_is_US_embassy">Excusez-moi, où c\'est l\'ambassade des états-unis?</string>
+    <string name="closest_hotel">Où est l\'hôtel le plus proche?</string>
+
+
+</resources>

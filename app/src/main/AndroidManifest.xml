@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flyingcats.vacation">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!--######################### Main Activity ###################-->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--######################### Places Activity ###################-->
+        <activity
+            android:name=".PlacesActivity"
+            android:label="@string/title_activity_maps">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.flyingcats.vacation.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.flyingcats.vacation.PlacesActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".GeofenceIntent"
+            android:exported="false">
+        </service>
+
+        <!--######################### Twitter Activities ###################-->
+        <activity android:name=".TwitterActivity">
+            <intent-filter>
+                <action android:name="com.flyingcats.vacation.TwitterActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--######################### SMS Activity ###################-->
+        <activity android:name=".SmsActivity">
+            <intent-filter>
+                <action android:name="com.flyingcats.vacation.SmsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--######################### Update Activity ###################-->
+        <!-- Removed for now. -->
+
+        <!--######################### Packing List Activity ###################-->
+        <activity android:name=".PackingListActivity">
+            <intent-filter>
+                <action android:name="com.flyingcats.vacation.PackingListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--######################### Translation Activity ###################-->
+        <activity android:name=".TranslationActivity">
+            <intent-filter>
+                <action android:name="com.flyingcats.vacation.TranslationActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--######################### Exchange Activity ###################-->
+
+        <activity android:name=".ExchangeActivity">
+            <intent-filter>
+                <action android:name="com.flyingcats.vacation.ExchangeActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="XXX_FILL_ME_XXX" />
+
+    </application>
+
+</manifest>

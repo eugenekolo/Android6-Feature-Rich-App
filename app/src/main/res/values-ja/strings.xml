@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!--Key phrases-->
+
+
+    <string name="where_is_terminal">(日本語) - すみません、ターミナルはどこですか。Sumimasen, Taminaru B wa doko desuka?</string>
+    <string name="where_is_baggage_claim">(日本語)  - すみません、手荷物受取所はどこですか。Sumimasen, te nimotsu uketori-jyo wa doko desu ka?</string>
+    <string name="how_much_cup_of_coffee">(日本語)  - コーヒーはいくらですか。Kōhī wa ikuradesu ka?</string>
+    <string name="where_is_restroom">(日本語)  - すみません、トイレはどこですか。Sumimasen, toire wa doko desu ka?</string>
+    <string name="where_is_good_restaurant">(日本語) - この辺にいいレストランがありますか。どこですか。Kono hen ni ī resutoran ga arimasu ka. Dokodesu ka.</string>
+    <string name="where_is_place">(日本語) - すみません、X はどこですか。Sumimasen, X wa dokodesu ka?</string>
+    <string name="where_is_US_embassy">(日本語) - すみません、米国大使館はどこですか。Sumimasen, Beikoku taishikan wa dokodesu ka?</string>
+    <string name="closest_hotel">(日本語) - すみません、一番近くて600ドル以下のホテルはどこですか。Sumimasen, ichiban chikakute roppyaku-doru ika no hoteru wa dokodesu ka?</string>
+
+
+
+
+
+
+</resources>

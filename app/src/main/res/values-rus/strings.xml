@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Vacation Survival Kit</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+
+    <!--Key phrases-->
+
+
+    <string name="where_is_terminal">Простите, где находится терминал ___?</string>
+    <string name="where_is_baggage_claim">Простите, где багаж заберать?</string>
+    <string name="how_much_cup_of_coffee">Сколько чашка кофе стоит?</string>
+    <string name="where_is_restroom">Извините, где туалет?</string>
+    <string name="where_is_good_restaurant">Где есть хороший ресторан радом с здеcь?</string>
+    <string name="where_is_place">Простите, где ___?</string>
+    <string name="where_is_US_embassy">Простите, где посольство США?</string>
+    <string name="closest_hotel">Где находится ближайшая гостиница?</string>
+
+</resources>

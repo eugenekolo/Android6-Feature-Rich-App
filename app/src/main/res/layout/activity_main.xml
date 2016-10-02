@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:columnCount="4"
+    android:rowCount="4"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.flyingcats.vacation.MainActivity"
+    android:id="@+id/relLayout"
+    android:weightSum="8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/choose_dest"
+        android:id="@+id/textView" />
+
+    <Spinner
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_dest"
+        android:hint="Choose Destination"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center"
+        android:padding="5dip"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:weightSum="4">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/imgBtnTwitter"
+                android:src="@drawable/twitterlogopng"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:background="@null"
+                android:onClick="onAnyButtonClick" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Post Tweet"
+                android:textSize="24sp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/txtTwitter" />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:id="@+id/imgBtnExchange"
+                android:src="@drawable/money"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:background="@null"
+                android:onClick="onAnyButtonClick" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Currency Exchange"
+                android:layout_gravity="center_vertical"
+                android:textSize="19sp"
+                android:id="@+id/txtCurrency" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imgBtnSms"
+                android:src="@drawable/sms"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:background="@null"
+                android:onClick="onAnyButtonClick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Send SMS"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:id="@+id/txtSMS" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imgBtnTranslate"
+                android:src="@drawable/translation"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:background="@null"
+                android:onClick="onAnyButtonClick" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Essential Phrases"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/txtTranslate" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imgBtnPackingList"
+                android:src="@drawable/packinglist"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:onClick="onAnyButtonClick"
+                android:background="@null" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Packing List"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/txtPacking" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imgBtnPlaces"
+                android:src="@drawable/icongooglemaps"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:background="@null"
+                android:onClick="onAnyButtonClick" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Places &amp; Attractions"
+                android:textSize="16sp"
+                android:id="@+id/txtPlaces" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageSurpriseMe"
+            android:src="@drawable/vacationicon"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:background="@null"
+            android:onClick="onAnyButtonClick"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imgBtnCalendar"
+                android:src="@drawable/calendar"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:background="@null"
+                android:onClick="onAnyButtonClick"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

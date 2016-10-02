@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_add_item"
+          android:icon="@drawable/ic_menu_add_24dp"
+          android:title="Add Item to Packing List"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/action_info"
+          android:icon="@drawable/ic_info_outline_24dp"
+          android:title="How We Use the Packing List"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/action_recommendation"
+          android:icon="@drawable/ic_recommendation_24dp"
+          android:title="Packing List Recommendations"
+          app:showAsAction="always"/>
+
+</menu>
