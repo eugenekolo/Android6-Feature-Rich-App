@@ -1,4 +1,6 @@
-# Android 6.0 Feature Rich App
+# Android Kitchen Sink
+
+A kitchen sink of Android 6.0 features originally made for a school project.
 
 This app isn't too exciting, but it has a lot of Android/Java code that can be used as reference.
 
